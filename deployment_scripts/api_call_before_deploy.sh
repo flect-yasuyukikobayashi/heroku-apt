@@ -1,0 +1,7 @@
+AUTH0_CLIENT_ID=$1
+AUTH0_CLIENT_SECRET=$2
+AUTH0_DOMAIN=$3
+
+ACCESS_TOKEN=$(sh scripts/get_token.sh $AUTH0_CLIENT_ID $AUTH0_CLIENT_SECRET $AUTH0_DOMAIN)
+
+sh scripts/before_deploy/tenants_settings.sh $AUTH0_DOMAIN $ACCESS_TOKEN

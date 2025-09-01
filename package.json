@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "deploy": "node deployment_scripts/deploy.js"
+  },
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
+}
